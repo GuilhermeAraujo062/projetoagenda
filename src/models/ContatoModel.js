@@ -29,7 +29,7 @@ Contato.prototype.valida = function() {
 
   // Validar Email
   if(this.body.email && !validator.isEmail(this.body.email)) this.errors.push('Email inválido');
-  if(!this.body.nome) this.errors.push('Nome é um campo obrigatório.')
+  if(!this.body.nome) this.errors.push('Nome é um campo obrigatório.');
   if(!this.body.email && !this.body.telefone) {
     this.errors.push('email ou telefone devem ser enviados.');
   }
