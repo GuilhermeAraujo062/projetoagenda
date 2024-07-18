@@ -54,6 +54,7 @@ exports.edit = async function(req, res) {
         console.log(e);
         res.render('404');
     }
+};
 
 exports.delete = async function(req, res) {
     if(!req.params.id) return res.render('404');
@@ -66,5 +67,3 @@ exports.delete = async function(req, res) {
     return;
 }
 
-
-};
